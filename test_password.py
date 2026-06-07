@@ -1,0 +1,3 @@
+from werkzeug.security import check_password_hash
+hash_value = 'scrypt:32768:8:1$HQhLhaoMsiFqmdIL$c3909aab3807ad0a4eb7e7fef0746fdc483829477c5b1fec8822b22f45466face9ae7d67df68e9399c1b56b8e3282e8c1a16eb6f7e126516c9468d107cfc5cce'
+print(check_password_hash(hash_value, 'admin123'))
